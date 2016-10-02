@@ -1,0 +1,111 @@
+/* Панель олимпиад */
+.olymp-tabpanel {
+
+    &__link {
+      display: inline-block;
+      width: 33%;
+      padding: 27px 30px;
+
+      font-size: rem(20px);
+      font-weight: bold;
+      line-height: 1.1;
+      text-decoration: none;
+      vertical-align: top;
+      color: #272727;
+
+      border: 2px solid #e1e1e1;
+
+        @include hover-focus {
+          color: darken(#272727, 15%);
+          text-decoration: none;
+
+          border-color: darken(#e1e1e1, 15%);;
+        }
+
+        &_active {
+          color: #fff;
+
+          background-color: #72c81e;
+          border-color: #72c81e;
+
+          cursor: default;
+
+            @include hover-focus {
+              color: #fff;
+
+              background-color: #72c81e;
+              border-color: #72c81e;
+            }
+        }
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+    }
+}
+
+
+.olymp-tab {
+  position: relative;
+
+  display: none;
+  margin-top: -2px;
+  padding: 30px;
+
+  border: 2px solid #72c81e;
+
+    &_active {
+      display: block;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.olympics-subjects {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.olympics-list {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.olympics-stage {
+    td, th {
+        padding: 0.6rem;
+    }
+}
+
+.olympics-collapse {
+    font-weight: 400;
+    color: #72c81e;
+    border-color: #72c81e;
+    &:focus, &:hover {
+        color: #4c8514;
+    }
+    &_active::after {
+        transform: rotate(90deg);
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-left: 10px;
+        margin-bottom: -5px;
+        vertical-align: baseline;
+        background-image: url(images/review__button-icon.png);
+        transition-duration: .2s;
+        transition-property: transform;
+    }
+}
+
+.collapse.in {
+    display: block;
+}
+
+.collapse {
+    display: none;
+}

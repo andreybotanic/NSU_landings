@@ -1,0 +1,22 @@
+.summer {
+    &_bg {
+      height: 560px;
+
+      color: #fff;
+
+      /* background: resolve("summer_bg.jpg") center no-repeat;
+      background-size: cover; */
+
+        .section__div {
+          border-color: #fff;
+        }
+
+        a {
+          color: #fff;
+
+            @include hover-focus {
+              color: darken(#fff, 15%);
+            }
+        }
+    }
+}

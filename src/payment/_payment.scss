@@ -1,0 +1,64 @@
+.payment {
+    background-color: #75c630;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.paycard {
+    border: 2px solid white;
+    margin: 0 5px;
+    padding: 0;
+    width: 230px;
+    &__title {
+        text-align: center;
+        color: white;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        font-weight: bold;
+        border-bottom: 1px solid white;
+    }
+    &__caption {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1em;
+        &_l {
+            font-size: 1.3em;
+        }
+    }
+    &__number {
+        display: block;
+        width: 50px;
+        margin: auto;
+
+        font-size: rem(25px);
+        line-height: 50px;
+        text-align: center;
+        color: #72c81e;
+        font-weight: bold;
+
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    &__cost {
+        background: white;
+        color: #72c81e;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding: 3px;
+        margin: 10px 0 5px;
+    }
+    &__exams {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.2rem;
+        padding: 3px;
+        margin-bottom: 3px;
+    }
+}

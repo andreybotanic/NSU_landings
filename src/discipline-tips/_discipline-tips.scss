@@ -1,0 +1,72 @@
+.discipline-tips {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            .discipline-tips__caption {
+                visibility: visible;
+            }
+        }
+        &:first-child .discipline-tips__caption {
+            margin-left: -100px;
+            &::after {
+                left: 100px;
+            }
+        }
+        &:last-child .discipline-tips__caption {
+            margin-left: -400px;
+            &::after {
+                left: 400px;
+            }
+        }
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        padding: 5px 15px 5px 0;
+        box-sizing: content-box;
+    }
+    &__title {
+        font-weight: bold;
+    }
+    &__caption {
+        visibility: hidden;
+        width: 120px;
+        background-color: #75c630;
+        color: #fff;
+        text-align: justify;
+        width: 500px;
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -250px;
+        padding: 3px 5px;
+        line-height: 1.3rem;
+        border-radius: 5px;
+        a {
+            color: #e1e1e1;
+            &:hover {
+                color: #272727;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #75c630 transparent transparent transparent;
+        }
+    }
+}

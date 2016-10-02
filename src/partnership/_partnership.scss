@@ -1,0 +1,71 @@
+.partnership {
+    &_bg {
+      min-height: 823px;
+
+      color: #fff;
+
+      /* background: resolve("partnership_bg.jpg") center no-repeat;
+      background-size: cover; */
+
+        .section__div {
+          border-color: #fff;
+        }
+
+        a {
+          color: #fff;
+
+            @include hover-focus {
+              color: darken(#fff, 15%);
+            }
+        }
+    }
+}
+
+
+/* Список партнерских университетов */
+.partnership-list {
+  padding-left: 40px;
+  padding-right: 40px;
+
+    .text-xl {
+      margin-bottom: 0.5rem;
+
+      text-indent: -40px;
+    }
+}
+
+
+/* Иконки языков */
+.partnership-icon {
+  width: 30px;
+  height: 20px;
+  margin-top: -5px;
+  margin-right: 10px;
+
+  vertical-align: middle;
+
+    &_as {
+      background-image: resolve("partnership-icon_as.png");
+    }
+    &_ch {
+      background-image: resolve("partnership-icon_ch.png");
+    }
+    &_de {
+      background-image: resolve("partnership-icon_de.png");
+    }
+    &_es {
+      background-image: resolve("partnership-icon_es.png");
+    }
+    &_fr {
+      background-image: resolve("partnership-icon_fr.png");
+    }
+    &_jp {
+      background-image: resolve("partnership-icon_jp.png");
+    }
+    &_tr {
+      background-image: resolve("partnership-icon_tr.png");
+    }
+    &_ca {
+      background-image: resolve("partnership-icon_ca.png");
+    }
+}

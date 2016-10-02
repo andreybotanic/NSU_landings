@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext);
+
+/* Vendor deps */
+@import "deps/bootstrap-variables";
+@import "deps/bootstrap";
+@import "slick-carousel/slick/slick.scss";
+@import "filament-sticky/fixedsticky.css";
+@import "magnific-popup/dist/magnific-popup.css";
+
+/* Authored deps */
+@import "deps/variables";
+@import "lib/mixins";
+@import "lib/icon/icon";
+
+/* Common Blocks */
+@import "common/type/type";
+@import "common/buttons/buttons";
+@import "common/utilities/utilities";
+@import "common/images/images";
+
+/* Blocks */
+@import "logo/logo";
+@import "nav/nav";
+@import "header/header";
+@import "footer/footer";
+@import "section/section";
+@import "first/first";
+@import "lead-section/lead-section";
+@import "video/video";
+@import "profiles/profiles";
+@import "banner/banner";
+@import "discipline/discipline";
+@import "discipline-tips/discipline-tips";
+@import "study/study";
+@import "olymp/olymp";
+@import "vk/vk";
+@import "parallax-pattern/parallax-pattern";
+@import "subjects/subjects";
+@import "practice/practice";
+//@import "partnership/partnership";
+@import "payment/payment";
+//@import "maps/maps";
+//@import "circs/circs";
+//@import "summer/summer";
+@import "partners/partners";
+@import "action/action";
+@import "works/works";
+@import "reviews/reviews";
+@import "wow/wow";
+
+
+.container {
+  width: 1300px;
+}

@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  padding: 8px 1rem;
+
+  font-size: rem(16px);
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
+
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid #fff;
+
+    @include hover-focus {
+      text-decoration: none;
+      color: #fff;
+
+      opacity: 0.9;
+    }
+
+    &_block {
+      display: block;
+      width: 100%;
+    }
+}

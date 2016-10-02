@@ -1,0 +1,44 @@
+.video {
+  height: 1080px;
+
+  text-align: center;
+  color: #fff;
+
+  /* background: resolve("video.jpg") center no-repeat;
+  background-size: cover; */
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+
+      vertical-align: middle;
+    }
+
+    &__box {
+      display: inline-block;
+      width: 540px;
+
+      vertical-align: middle;
+    }
+
+    &__link {
+      display: block;
+      width: width("video__link.png");
+      height: height("video__link.png");
+      margin: 0 auto 25px;
+
+      background: resolve("video__link.png") center no-repeat;
+
+        &:hover {
+          opacity: 0.9;
+        }
+    }
+
+    &__title {
+      margin-bottom: $section-margin;
+
+      font-size: rem(26px);
+    }
+}

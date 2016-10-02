@@ -1,0 +1,21 @@
+.action-vk {
+    position: relative;
+    display: block;
+    padding-left: 56px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: "";
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        vertical-align: middle;
+        background: url(images/action-vk.png) center no-repeat;
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+  width: width("logo.png");
+  height: height("logo.png");
+
+  background: resolve("logo.png") center no-repeat;
+
+    &_inverse {
+      background-image: resolve("logo_inverse.png");
+    }
+}

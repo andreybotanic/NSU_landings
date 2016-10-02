@@ -1,0 +1,42 @@
+{
+  "name": "hobcore",
+  "description": "Boilerplate to start new project",
+  "main": "gulpfile.js",
+  "authors": [
+    "hobcode"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "gulp",
+    "bootstrap",
+    "boilerplate",
+    "css",
+    "sass",
+    "postcss",
+    "web",
+    "front-end"
+  ],
+  "homepage": "https://github.com/hobcode/hobcore",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "libs"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2",
+    "jquery": "^2.2.2",
+    "tether": "^1.2.0",
+    "html5shiv": "^3.7.3",
+    "slick-carousel": "^1.6.0",
+    "jquery.scrollTo": "^2.1.2",
+    "filament-sticky": "^0.1.7",
+    "wow": "wowjs#^1.1.2",
+    "parallax.js": "^1.4.2",
+    "magnific-popup": "^1.1.0"
+  }
+}

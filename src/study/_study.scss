@@ -1,0 +1,66 @@
+/* Панель */
+.study-tabpanel {
+
+    &__link {
+      display: inline-block;
+      width: 33%;
+      padding: 27px 30px;
+
+      font-size: rem(20px);
+      font-weight: bold;
+      line-height: 1.1;
+      text-decoration: none;
+      vertical-align: top;
+      color: #272727;
+
+      border: 2px solid #e1e1e1;
+
+        @include hover-focus {
+          color: darken(#272727, 15%);
+          text-decoration: none;
+
+          border-color: darken(#e1e1e1, 15%);;
+        }
+
+        &_active {
+          color: #fff;
+
+          background-color: #72c81e;
+          border-color: #72c81e;
+
+          cursor: default;
+
+            @include hover-focus {
+              color: #fff;
+
+              background-color: #72c81e;
+              border-color: #72c81e;
+            }
+        }
+        &__5 {
+            width: calc(20% - 5px);
+        }
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+    }
+}
+
+
+.study-tab {
+  position: relative;
+
+  display: none;
+  margin-top: -2px;
+  padding: 30px;
+
+  border: 2px solid #72c81e;
+
+    &_active {
+      display: block;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+}

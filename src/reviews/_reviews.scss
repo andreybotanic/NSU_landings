@@ -1,0 +1,142 @@
+.reviews {
+  margin: 50px 10px 0;
+
+    &__item {
+      padding: 0 38px;
+    }
+
+
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      left: -65px;
+      z-index: 1;
+
+      overflow: hidden;
+      width: width("reviews-slider-arrow.png");
+      height: height("reviews-slider-arrow.png");
+      margin: -23px 0 0;
+      padding: 0;
+
+      white-space: nowrap;
+      text-indent: 100%;
+
+      background: resolve("reviews-slider-arrow.png") center no-repeat;
+      border: none;
+      outline: none;
+      opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+        }
+    }
+
+    .slick-next {
+      right: -65px;
+      left: auto;
+
+      transform: rotate(180deg);
+    }
+}
+
+
+/* Блок отзыва */
+.review {
+  position: relative;
+
+  width: 286px;
+  height: 610px;
+  padding: 30px 30px 80px;
+
+  border: 2px solid #ebebeb;
+
+    &_open {
+      margin-right: 440px;
+      background-color: #ebebeb;
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto 30px;
+
+      border-radius: 50%;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+
+      font-size: rem(20px);
+      font-weight: bold;
+      line-height: 1.1;
+      text-align: center;
+    }
+
+    &__short {
+      font-size: rem(14px);
+      text-align: center;
+    }
+
+    &__button {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      left: 30px;
+
+      font-weight: normal;
+      color: #72c81e;
+
+      border-color: #72c81e;
+
+        @include hover-focus {
+          color: darken(#72c81e, 15%);
+        }
+    }
+
+    &__button-icon {
+      width: width("review__button-icon.png");
+      height: height("review__button-icon.png");
+      margin-left: 10px;
+
+      background-image: resolve("review__button-icon.png");
+    }
+
+    &__text {
+      position: absolute;
+      top: -2px;
+      left: 100%;
+      bottom: -2px;
+      z-index: 1;
+
+      display: none;
+      overflow-y: auto;
+      width: 440px;
+      padding: 30px;
+
+      font-style: italic;
+      text-align: left;
+
+      background-color: #e1e1e1;
+
+        p:last-child {
+          margin-bottom: 0;
+        }
+
+        .review_open & {
+          display: block;
+        }
+    }
+
+    &__text-close {
+      float: right;
+      width: width("review__text-close.png");
+      height: height("review__text-close.png");
+      margin-top: -15px;
+      margin-right: -15px;
+
+      background-image: resolve("review__text-close.png");
+
+        &:hover {
+          opacity: 0.9;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.first {
+  position: relative;
+
+  height: 1080px;
+
+  text-align: center;
+  color: #fff;
+
+  /* background: resolve("first.jpg") center no-repeat;
+  background-size: cover; */
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 100%;
+
+      vertical-align: middle;
+    }
+
+    &__box {
+      display: inline-block;
+      width: 640px;
+
+      vertical-align: middle;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+
+      font-size: rem(60px);
+      font-weight: bold;
+    }
+
+    &__about {
+      margin-bottom: 45px;
+
+      font-size: rem(24px);
+      line-height: rem(34px);
+    }
+
+    &__button-box {
+      display: inline-block;
+      width: 160px;
+    }
+
+
+    &__scrolldown {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      display: block;
+      width: width("first__scrolldown.png");
+      height: height("first__scrolldown.png");
+      margin: 0 0 50px -13px;
+
+      background: resolve("first__scrolldown.png") center no-repeat;
+
+        &:hover {
+          opacity: 0.9;
+        }
+    }
+}

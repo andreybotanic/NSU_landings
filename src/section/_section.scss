@@ -1,0 +1,33 @@
+.section {
+  padding: 80px 0;
+
+    &__icon {
+      margin-bottom: 6px;
+
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: $section-margin;
+
+      font-size: rem(50px);
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &__div {
+      width: 80px;
+      margin: 0 auto $section-margin;
+
+      border: none;
+      border-top: 2px solid #ccc;
+
+        &_no-margin {
+          margin-bottom: 0;
+        }
+    }
+
+    &__content {
+      padding: 0 65px;
+    }
+}

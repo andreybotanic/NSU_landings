@@ -1,0 +1,31 @@
+.nav {
+    &__link {
+      display: inline-block;
+      padding: 23px 0;
+
+      font-size: rem(16px);
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      vertical-align: middle;
+      color: #434343;
+
+        @include hover-focus {
+          color: darken(#434343, 15%);
+          text-decoration: none;
+        }
+
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+    }
+
+    &_inverse {
+      .nav__link {
+        color: #fff;
+          @include hover-focus {
+            color: darken(#fff, 15%);
+          }
+      }
+    }
+}
