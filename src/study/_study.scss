@@ -3,7 +3,7 @@
 
     &__link {
       display: inline-block;
-      width: 33%;
+      width: calc(25% - 4px);
       padding: 27px 30px;
 
       font-size: rem(20px);
