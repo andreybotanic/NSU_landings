@@ -11,6 +11,7 @@ $( document ).ready(function() {
 
     $('.discipline-tab').removeClass('discipline-tab_active');
     $(link).addClass('discipline-tab_active');
+	  jQuery(window).trigger('resize').trigger('scroll');
   });
 
 });

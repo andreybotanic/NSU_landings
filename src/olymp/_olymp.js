@@ -11,6 +11,8 @@ $( document ).ready(function() {
 
     $('.olymp-tab').removeClass('olymp-tab_active');
     $(link).addClass('olymp-tab_active');
+	  
+	jQuery(window).trigger('resize').trigger('scroll');
   });
     
     $('.olympics-collapse').on('click', function(e) {

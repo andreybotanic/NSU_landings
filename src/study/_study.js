@@ -11,6 +11,7 @@ $( document ).ready(function() {
 
     $('.study-tab').removeClass('study-tab_active');
     $(link).addClass('study-tab_active');
+	  jQuery(window).trigger('resize').trigger('scroll');
   });
 
 });

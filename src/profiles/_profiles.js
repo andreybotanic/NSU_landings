@@ -11,6 +11,7 @@ $( document ).ready(function() {
 
     $('.profiles-tab').removeClass('profiles-tab_active');
     $(link).addClass('profiles-tab_active');
+	  jQuery(window).trigger('resize').trigger('scroll');
   });
 
 });
