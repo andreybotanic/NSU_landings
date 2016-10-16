@@ -11,8 +11,9 @@
         justify-content: center;
         margin: 0 5px;
         img {
-            max-width: 158px;
+            max-width: 139px;
             max-height: 90px;
+			margin: auto;
         }
         &::after {
           content: "";

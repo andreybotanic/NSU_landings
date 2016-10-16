@@ -14,3 +14,14 @@ $( document ).ready(function() {
   });
 
 });
+
+$( document ).ready(function() {
+
+  // Слайдер позиций
+  $('.practice-slider').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5
+  });
+
+});
