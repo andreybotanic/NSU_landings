@@ -1,5 +1,12 @@
 .payment {
     background-color: #75c630;
+	&__note {
+		color: white;
+		margin-left: 40px;
+		margin-top: 15px;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
 }
 
 .flex-row {
